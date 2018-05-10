@@ -15,6 +15,11 @@
 
 function fun() {
 	alert("Oi")
+	//myFunction()
+}
+
+document.getElementById("Eagles").onmouseenter = function() {
+	alert("Oi")
 	myFunction()
 }
 

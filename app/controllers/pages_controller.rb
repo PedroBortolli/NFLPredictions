@@ -17,4 +17,7 @@ class PagesController < ApplicationController
 	def about
 		render html: "Alou"
 	end
+	def result
+		@q = params[:param1].to_s
+	end
 end

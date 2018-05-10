@@ -1,8 +1,25 @@
-<%= image_tag("logos/eagles.png", id: "Eagles", onclick: "fun()", alt: "Eagles logo", size: "140x100", class: "img-responsive") %>
-<%= image_tag("logos/falcons.png", alt: "Falcons logo", size: "140x100", class: "img-responsive") %>
+<%= image_tag("logos/eagles.png", alt: "Eagles logo", id: "Eagles", onclick: "fun()", size: "120x70", class: "img-responsive") %>
+<%= image_tag("logos/falcons.png", alt: "Falcons logo", size: "120x70", class: "img-responsive") %>
 </br>
 </br>
+
+
+<%= form_tag "/result", method:'get' do %>
+	<%= radio_button_tag :param1, 'oi' %> oi
+	</br>
+	<%= radio_button_tag :param1, 'flw' %> tchau
+	</br>
+	<%= radio_button_tag :param1, 'eae kk' %> eae men
+	</br>
+	<%= submit_tag "Submit!" %>
+<% end %>
+
+
+</br>
+</br>
+
 <% for week in 1..17 %>
+	<h3>Week <%= week %></h3>
 	<% for game in @content[week.to_s] %>
 		<%= game["awayTeam"]%> @<%=game["homeTeam"] %>
 		</br>
