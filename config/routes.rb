@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'pages#test'
   get 'about' => 'pages#about'
   get 'result' => 'pages#result'
+  post 'result' => 'pages#result'
 end

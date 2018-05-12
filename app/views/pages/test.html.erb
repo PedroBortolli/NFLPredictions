@@ -1,28 +1,19 @@
-<%= image_tag("logos/eagles.png", alt: "Eagles logo", id: "Eagles", onclick: "fun()", size: "120x70", class: "img-responsive") %>
-<%= image_tag("logos/falcons.png", alt: "Falcons logo", size: "120x70", class: "img-responsive") %>
-</br>
-</br>
-
-
-<%= form_tag "/result", method:'get' do %>
-	<%= radio_button_tag :param1, 'oi' %> oi
-	</br>
-	<%= radio_button_tag :param1, 'flw' %> tchau
-	</br>
-	<%= radio_button_tag :param1, 'eae kk' %> eae men
-	</br>
-	<%= submit_tag "Submit!" %>
-<% end %>
-
-
-</br>
-</br>
-
-<% for week in 1..17 %>
-	<h3>Week <%= week %></h3>
-	<% for game in @content[week.to_s] %>
-		<%= game["awayTeam"]%> @<%=game["homeTeam"] %>
+<div class = "centered">
+	<% game = "game1" %>
+	<% for week in 1..17 %>
 		</br>
+		<h1>Week <%= week %></h1>
+		</br>
+		</br>
+		<% for game in @content[week.to_s] %>
+			<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", onclick: "fun(id, '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "img-responsive") %> &nbsp;&nbsp;&nbsp;&nbsp;
+			<%= image_tag("logos/#{game["homeTeam"]}.png", alt: "#{game["homeTeam"]} logo", id: "#{game["homeTeam"]}", onclick: "fun(id, '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "img-responsive") %>
+			</br>
+			</br>
+			</br>
+			</br>
+		<% end %>
 	<% end %>
 	</br>
-<% end %>
+	</br>
+</div>

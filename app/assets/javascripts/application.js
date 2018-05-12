@@ -12,17 +12,16 @@
 //
 //= require rails-ujs
 //= require_tree
+//= require jquery
 
-function fun() {
-	alert("Oi")
-	//myFunction()
-}
+var a = 0
 
-document.getElementById("Eagles").onmouseenter = function() {
-	alert("Oi")
-	myFunction()
-}
-
-function myFunction() {
-    document.getElementById("Eagles").style.cursor = "pointer";
+function fun(winner, st) {
+	console.log(winner, st)
+	jQuery.ajax({
+		data: "gameId" +' =' + winner,
+		dataType: 'script',
+		type: 'post',
+		url: "/result"
+	});
 }

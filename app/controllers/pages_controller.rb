@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+	skip_before_action :verify_authenticity_token
 	include PagesHelper
 	def test
 
@@ -18,6 +19,11 @@ class PagesController < ApplicationController
 		render html: "Alou"
 	end
 	def result
-		@q = params[:param1].to_s
+		picks = Hash.new
+		for id in 1..2
+			gameId = "game" + id.to_s
+			@q = params[:gameId].to_s
+			puts(@q)
+		end
 	end
 end
