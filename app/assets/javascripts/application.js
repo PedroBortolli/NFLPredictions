@@ -16,12 +16,12 @@
 
 var a = 0
 
-function fun(winner, st) {
-	console.log(winner, st)
+function fun(winner, id) {
+	console.log(winner, id)
 	jQuery.ajax({
-		data: "gameId" +' =' + winner,
+		data: {gameWinner: winner, gameId: id},
 		dataType: 'script',
 		type: 'post',
-		url: "/result"
+		url: "/update"
 	});
 }
