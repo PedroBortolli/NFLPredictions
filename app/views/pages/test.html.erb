@@ -5,8 +5,8 @@
 		</br>
 		</br>
 		<% for game in @content[week.to_s] %>
-			<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", onclick: "fun(id, '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "img-responsive") %> &nbsp;&nbsp;&nbsp;&nbsp;
-			<%= image_tag("logos/#{game["homeTeam"]}.png", alt: "#{game["homeTeam"]} logo", id: "#{game["homeTeam"]}", onclick: "fun(id, '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "img-responsive") %>
+			<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", onclick: "click_on_image(id, '#{game["homeTeam"]}', '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "style_image") %> &nbsp;&nbsp;&nbsp;&nbsp;
+			<%= image_tag("logos/#{game["homeTeam"]}.png", alt: "#{game["homeTeam"]} logo", id: "#{game["homeTeam"]}", onclick: "click_on_image(id, '#{game["awayTeam"]}', '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "style_image") %>
 			</br>
 			</br>
 			</br>

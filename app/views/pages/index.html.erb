@@ -1,1 +1,12 @@
-@content
+<div class="centered">
+<%= form_tag "/test", method:'get' do %>
+
+<%= text_field_tag :param1, nil, placeholder: "CF Handle1" %>
+
+</br>
+<%= text_field_tag :param2, nil, placeholder: "CF Handle2" %>
+
+</br>
+<%= submit_tag "Compare!" %>
+<% end %>
+</div>

@@ -17,18 +17,33 @@ class PagesController < ApplicationController
 		@content = parsed_schedule
 	end
 
+	def index
+	end
+
 	def about
 		render html: "Alou"
 	end
 
 	def result
+		database = User.all
+		for data in database
+			if data.winner == "ATL"
+				puts("Opa")
+				data.destroy
+			end
+			#puts(data.winner + " " + data.gameId)
+		end
+		for data in database
+			puts(data.winner + " " + data.gameId)
+		end
 	end
 
 	def update
-		puts("Eaeeeeeeeeeeeeeee")
-		picks = Hash.new
 		winner = params[:gameWinner].to_s
 		gameId = params[:gameId].to_s
-		puts(winner, gameId)
+		#user = User.new
+		#user.winner = winner
+		#user.gameId = gameId
+		#user.save
 	end
 end

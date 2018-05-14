@@ -1,0 +1,22 @@
+DB:
+!!!!migrate to postgresql!!!!
+user gameId winner
+(string string string)
+
+Index:
+create button (needs unique username, tell the user to use the other button if trying to load an existent file)
+load (single) button (needs valid username that is in the db)
+load (two) button (needs 2 valid usernames that are in the db) - shows comparisons between both users' picks
+
+Create:
+better design
+display games week by week
+next week button should not reload page
+show standings as the picks are being made (?) (needs tie-breakers used by the NFL)
+submit form after week 17 should save all picks made by the user to the db
+
+Load (single):
+load user's picks and show them on the screen (show standings (?) (needs tie-breakers used by the NFL))
+
+Load (two):
+load both users' picks and show comparisons between them (need to think about what is useful to show here)

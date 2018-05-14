@@ -14,12 +14,16 @@
 //= require_tree
 //= require jquery
 
-var a = 0
-
-function fun(winner, id) {
-	console.log(winner, id)
+function click_on_image(winner, loser, gameId) {
+	//console.log(winner, id)
+	var team_logo = document.getElementById(winner)
+	team_logo.style.opacity = 1.0
+	team_logo.style.borderBottom = '2px solid #f00'
+	team_logo = document.getElementById(loser)
+	team_logo.style.opacity = 0.25
+	team_logo.style.borderBottom = '2px solid transparent'
 	jQuery.ajax({
-		data: {gameWinner: winner, gameId: id},
+		data: {gameWinner: winner, gameId: gameId},
 		dataType: 'script',
 		type: 'post',
 		url: "/update"
