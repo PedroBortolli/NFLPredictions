@@ -11,12 +11,13 @@ class PagesController < ApplicationController
 			parsed_schedule[game["gameWeek"]].push(game)
 		end
 
-		@current_user = params[:username]
+		@@current_user = params[:username]
+		@user = @@current_user
 		@games_picked = Hash.new
 		database = Prediction.all
 
 		for data in database
-			if data.user == @current_user
+			if data.user == @@current_user
 				@games_picked.store(data.gameId, data.winner) 
 			end
 		end
@@ -34,7 +35,7 @@ class PagesController < ApplicationController
 	def result
 		database = Prediction.all
 		for data in database
-			puts("(" + data.user + ")  =>  " + data.winner + " " + data.gameId)
+			puts("(" + data.user.to_s + ")  =>  " + data.winner.to_s + " " + data.gameId.to_s)
 			#data.delete
 		end
 	end
@@ -42,11 +43,12 @@ class PagesController < ApplicationController
 	def update
 		winner = params[:gameWinner].to_s
 		gameId = params[:gameId].to_s
-		prediction = search_for_game("trololo", gameId)
+		prediction = search_for_game(@@current_user, gameId)
+		puts(@@current_user)
 		puts(prediction)
 		if prediction == nil
 			prediction = Prediction.new
-			prediction.user = "trololo"
+			prediction.user = @@current_user
 			prediction.gameId = gameId
 			prediction.winner = winner
 		else
