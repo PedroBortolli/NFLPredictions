@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 	skip_before_action :verify_authenticity_token
 	include PagesHelper
 
-	def test
+	def predictions
 		url = "https://www.fantasyfootballnerd.com/service/schedule/json/56rzxuc2a53b/"
 		schedule = call_api(url)["Schedule"]
 		parsed_schedule = Hash.new{|h,k| h[k] = Array.new}
@@ -11,10 +11,15 @@ class PagesController < ApplicationController
 			parsed_schedule[game["gameWeek"]].push(game)
 		end
 
-		#database = Prediction.all
-		#for data in database
+		@current_user = params[:username]
+		@games_picked = Hash.new
+		database = Prediction.all
 
-		#end
+		for data in database
+			if data.user == @current_user
+				@games_picked.store(data.gameId, data.winner) 
+			end
+		end
 
 		@content = parsed_schedule
 	end
@@ -30,6 +35,7 @@ class PagesController < ApplicationController
 		database = Prediction.all
 		for data in database
 			puts("(" + data.user + ")  =>  " + data.winner + " " + data.gameId)
+			#data.delete
 		end
 	end
 
@@ -37,6 +43,7 @@ class PagesController < ApplicationController
 		winner = params[:gameWinner].to_s
 		gameId = params[:gameId].to_s
 		prediction = search_for_game("trololo", gameId)
+		puts(prediction)
 		if prediction == nil
 			prediction = Prediction.new
 			prediction.user = "trololo"

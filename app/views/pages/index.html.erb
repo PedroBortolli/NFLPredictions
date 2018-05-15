@@ -1,12 +1,7 @@
 <div class="centered">
-<%= form_tag "/test", method:'get' do %>
-
-<%= text_field_tag :param1, nil, placeholder: "CF Handle1" %>
-
+<%= form_tag "/predictions", method:'get' do %>
+<%= text_field_tag :username, nil, placeholder: "Type your username" %>
 </br>
-<%= text_field_tag :param2, nil, placeholder: "CF Handle2" %>
-
-</br>
-<%= submit_tag "Compare!" %>
+<%= submit_tag "Create (or load if available)" %>
 <% end %>
 </div>

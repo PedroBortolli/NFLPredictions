@@ -16,16 +16,35 @@
 
 function click_on_image(winner, loser, gameId) {
 	//console.log(winner, id)
-	var team_logo = document.getElementById(winner)
-	team_logo.style.opacity = 1.0
-	team_logo.style.borderBottom = '2px solid #f00'
-	team_logo = document.getElementById(loser)
-	team_logo.style.opacity = 0.25
-	team_logo.style.borderBottom = '2px solid transparent'
+	update_logo(winner, true)
+	update_logo(loser, false)
 	jQuery.ajax({
 		data: {gameWinner: winner, gameId: gameId},
 		dataType: 'script',
 		type: 'post',
 		url: "/update"
 	});
+}
+
+function update_logo(imageId, highlight) {
+	var team_logo = document.getElementById(imageId)
+	if (highlight == true) {
+		team_logo.style.opacity = 1.0
+		team_logo.style.borderBottom = '2px solid #f00'
+	}
+	else {
+		team_logo.style.opacity = 0.25
+		team_logo.style.borderBottom = '2px solid transparent'
+	}
+}
+
+function show_picked_team(picked_team, home_team, away_team) {
+	if (picked_team == home_team) {
+		update_logo(home_team, true)
+		update_logo(away_team, false)
+	}
+	else {
+		update_logo(home_team, false)
+		update_logo(away_team, true)
+	}
 }

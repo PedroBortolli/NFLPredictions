@@ -6,11 +6,13 @@ module PagesHelper
 		return parsed_json
 	end
 
-	def search_for_game (user, gameId)
+	def search_for_game (current_user, gameId)
 		database = Prediction.all
 		for data in database
-			if data.user == user
-				return data
+			if data.user == current_user
+				if data.gameId == gameId
+					return data
+				end
 			end
 		end
 		return nil
