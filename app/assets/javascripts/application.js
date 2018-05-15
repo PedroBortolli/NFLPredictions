@@ -33,7 +33,7 @@ function update_logo(imageId, highlight) {
 		team_logo.style.borderBottom = '2px solid #f00'
 	}
 	else {
-		team_logo.style.opacity = 0.25
+		team_logo.style.opacity = 0.10
 		team_logo.style.borderBottom = '2px solid transparent'
 	}
 }

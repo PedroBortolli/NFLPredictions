@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
 	skip_before_action :verify_authenticity_token
+	before_action :authenticate_user!, :except => [:index, :about]
 	include PagesHelper
 
 	def predictions
@@ -11,13 +12,11 @@ class PagesController < ApplicationController
 			parsed_schedule[game["gameWeek"]].push(game)
 		end
 
-		@@current_user = params[:username]
-		@user = @@current_user
 		@games_picked = Hash.new
 		database = Prediction.all
 
 		for data in database
-			if data.user == @@current_user
+			if data.user == current_user.username
 				@games_picked.store(data.gameId, data.winner) 
 			end
 		end
@@ -43,12 +42,11 @@ class PagesController < ApplicationController
 	def update
 		winner = params[:gameWinner].to_s
 		gameId = params[:gameId].to_s
-		prediction = search_for_game(@@current_user, gameId)
-		puts(@@current_user)
+		prediction = search_for_game(current_user.username, gameId)
 		puts(prediction)
 		if prediction == nil
 			prediction = Prediction.new
-			prediction.user = @@current_user
+			prediction.user = current_user.username
 			prediction.gameId = gameId
 			prediction.winner = winner
 		else
