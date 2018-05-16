@@ -1,4 +1,4 @@
-<div class = "centered">
+<body class = "centered">
 	<h1><%= current_user.username %>'s picks</h1>
 	<% for week in 1..17 %>
 		<%= link_to(week.to_s, '/predictions?week='+week.to_s, {:style=>'font-size: 150%'}) %>
@@ -10,19 +10,25 @@
 	<h2>Week <%= week %></h2>
 	</br>
 	</br>
-	<% for game in @content[week.to_s] %>
-		<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", onclick: "click_on_image(id, '#{game["homeTeam"]}', '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "style_image") %> &nbsp;&nbsp;&nbsp;&nbsp;
-		<%= image_tag("logos/#{game["homeTeam"]}.png", alt: "#{game["homeTeam"]} logo", id: "#{game["homeTeam"]}", onclick: "click_on_image(id, '#{game["awayTeam"]}', '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "style_image") %>
-		<% if @games_picked.key?(game["gameId"]) %>
-			<script type="text/javascript">
-				var picked_team = "<%= @games_picked[game["gameId"]] %>"
-				var home_team = "<%= game["homeTeam"] %>"
-				var away_team = "<%= game["awayTeam"] %>"
-				show_picked_team(picked_team, home_team, away_team)
-			</script>
+	<div class = "wrapper">
+		<% for game in @content[week.to_s] %>
+			<div class = "box">
+				<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", onclick: "click_on_image(id, '#{game["homeTeam"]}', '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "img-responsive") %> 
+				<!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+				<%= image_tag("@.png", size: "50x50", class: "img-responsive") %>
+				<%= image_tag("logos/#{game["homeTeam"]}.png", alt: "#{game["homeTeam"]} logo", id: "#{game["homeTeam"]}", onclick: "click_on_image(id, '#{game["awayTeam"]}', '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "img-responsive") %>
+				<% if @games_picked.key?(game["gameId"]) %>
+					<script type="text/javascript">
+						var picked_team = "<%= @games_picked[game["gameId"]] %>"
+						var home_team = "<%= game["homeTeam"] %>"
+						var away_team = "<%= game["awayTeam"] %>"
+						show_picked_team(picked_team, home_team, away_team)
+					</script>
+				<% end %>
+			</div>
+			<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
 		<% end %>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<% end %>
+	</div>
 	</br>
 	</br>
-</div>
+</body>

@@ -1,10 +1,6 @@
 <% if user_signed_in? %>
-  <h2>Hello, <%= current_user.username %>!</h2>
-  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
-<% else %>
-  <%= link_to('Login', new_user_session_path)  %>  
+  <h2>Hello, <%= current_user.username %>!</h2>    
 <% end %>
-
 </br>
 
 <%= link_to('Your predictions', '/predictions?week=1') %>

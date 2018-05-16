@@ -8,6 +8,9 @@ class PagesController < ApplicationController
 		schedule = call_api(url)["Schedule"]
 		parsed_schedule = Hash.new{|h,k| h[k] = Array.new}
 
+		url = "https://www.fantasyfootballnerd.com/service/weather/json/56rzxuc2a53b/"
+		games_info = call_api(url)
+
 		for game in schedule
 			parsed_schedule[game["gameWeek"]].push(game)
 		end
