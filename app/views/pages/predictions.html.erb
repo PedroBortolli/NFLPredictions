@@ -1,4 +1,4 @@
-<body class = "centered">
+<body class = "background centered">
 	<h1><%= current_user.username %>'s picks</h1>
 	<% for week in 1..17 %>
 		<%= link_to(week.to_s, '/predictions?week='+week.to_s, {:style=>'font-size: 150%'}) %>
@@ -10,9 +10,9 @@
 	<h2>Week <%= week %></h2>
 	</br>
 	</br>
-	<div class = "wrapper">
+	<div class = "grid">
 		<% for game in @content[week.to_s] %>
-			<div class = "box">
+			<div class = "box centered">
 				<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", onclick: "click_on_image(id, '#{game["homeTeam"]}', '#{game["gameId"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "img-responsive") %> 
 				<!--&nbsp;&nbsp;&nbsp;&nbsp;-->
 				<%= image_tag("@.png", size: "50x50", class: "img-responsive") %>

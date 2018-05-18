@@ -14,10 +14,12 @@
  *= require_self
  */
 
-.centered {
-    text-align: center;
-    width: 100%;	
+.background {
 	background-color: LightSkyBlue;
+}
+
+.centered {
+	text-align: center;	
 }
 
 .style_image {
@@ -25,20 +27,15 @@
 	border-bottom: 2px solid transparent;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: auto;
-  grid-column-gap: 2px;
-  grid-row-gap: 25px;
-  align-items: center;
-  /*justify-content: center;*/
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows: auto;
+	grid-column-gap: 2px;
+	grid-row-gap: 25px;
+	align-items: center;
 }
 
 .box {
 	border: 2px solid green;
-}
-
-.img-responsive {
-
 }

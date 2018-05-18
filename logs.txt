@@ -1,0 +1,332 @@
+2018-05-16T14:40:28.298406+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract_adapter.rb:167:in `columns'
+2018-05-16T14:40:28.298407+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/schema_cache.rb:67:in `columns'
+2018-05-16T14:40:28.298408+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/schema_cache.rb:73:in `columns_hash'
+2018-05-16T14:40:28.298410+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:471:in `load_schema!'
+2018-05-16T14:40:28.298412+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/attribute_decorators.rb:50:in `load_schema!'
+2018-05-16T14:40:28.298413+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:464:in `block in load_schema'
+2018-05-16T14:40:28.298414+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/ruby-2.3.7/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+2018-05-16T14:40:28.298411+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/attributes.rb:233:in `load_schema!'
+2018-05-16T14:40:28.298415+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:461:in `load_schema'
+2018-05-16T14:40:28.298417+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:353:in `attribute_types'
+2018-05-16T14:40:28.298418+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/attribute_methods.rb:179:in `has_attribute?'
+2018-05-16T14:40:28.298419+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/inheritance.rb:55:in `new'
+2018-05-16T14:40:28.298423+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/devise-4.4.3/app/controllers/devise/sessions_controller.rb:11:in `new'
+2018-05-16T14:40:28.298424+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+2018-05-16T14:40:28.298425+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+2018-05-16T14:40:28.298426+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+2018-05-16T14:40:28.298427+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+2018-05-16T14:40:28.298428+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:131:in `run_callbacks'
+2018-05-16T14:40:28.298430+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+2018-05-16T14:40:28.298431+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+2018-05-16T14:40:28.298432+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+2018-05-16T14:40:28.298433+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+2018-05-16T14:40:28.298434+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+2018-05-16T14:40:28.298435+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+2018-05-16T14:40:28.298436+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+2018-05-16T14:40:28.298437+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+2018-05-16T14:40:28.298439+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+2018-05-16T14:40:28.298440+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+2018-05-16T14:40:28.298441+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+2018-05-16T14:40:28.298444+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+2018-05-16T14:40:28.298445+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+2018-05-16T14:40:28.298446+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+2018-05-16T14:40:28.298447+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+2018-05-16T14:40:28.298449+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+2018-05-16T14:40:28.298450+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/mapper.rb:46:in `serve'
+2018-05-16T14:40:28.298451+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+2018-05-16T14:40:28.298452+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+2018-05-16T14:40:28.298454+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+2018-05-16T14:40:28.298455+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+2018-05-16T14:40:28.298458+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+2018-05-16T14:40:28.298462+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+2018-05-16T14:40:28.298463+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+2018-05-16T14:40:28.298464+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/etag.rb:25:in `call'
+2018-05-16T14:40:28.298465+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/conditional_get.rb:25:in `call'
+2018-05-16T14:40:28.298466+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/head.rb:12:in `call'
+2018-05-16T14:40:28.298468+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/session/abstract/id.rb:232:in `context'
+2018-05-16T14:40:28.298469+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/session/abstract/id.rb:226:in `call'
+2018-05-16T14:40:28.298470+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+2018-05-16T14:40:28.298471+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+2018-05-16T14:40:28.298472+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+2018-05-16T14:40:28.298473+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+2018-05-16T14:40:28.298475+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+2018-05-16T14:40:28.298476+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+2018-05-16T14:40:28.298477+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+2018-05-16T14:40:28.298478+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+2018-05-16T14:40:28.298479+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+2018-05-16T14:40:28.298480+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+2018-05-16T14:40:28.298481+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+2018-05-16T14:40:28.298482+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+2018-05-16T14:40:28.298484+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+2018-05-16T14:40:28.298485+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+2018-05-16T14:40:28.298486+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+2018-05-16T14:40:28.298487+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+2018-05-16T14:40:28.298488+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+2018-05-16T14:40:28.298489+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+2018-05-16T14:40:28.298491+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+2018-05-16T14:40:28.298492+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+2018-05-16T14:40:28.298493+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+2018-05-16T14:40:28.298494+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+2018-05-16T14:40:28.298495+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+2018-05-16T14:40:28.298496+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+2018-05-16T14:40:28.298499+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+2018-05-16T14:40:28.298500+00:00 app[web.1]: [ebb472b8-db1a-4c53-bb3d-c29877637070] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+2018-05-16T14:40:32.161311+00:00 heroku[router]: at=info method=GET path="/users/" host=nflpredictions.herokuapp.com request_id=aab14c2e-9978-4dbe-94fd-d58dff9b59eb fwd="143.107.45.207" dyno=web.1 connect=9ms service=7ms status=404 bytes=1902 protocol=http
+2018-05-16T14:40:32.158211+00:00 app[web.1]: I, [2018-05-16T14:40:32.158070 #4]  INFO -- : [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] Started GET "/users/" for 143.107.45.207 at 2018-05-16 14:40:32 +0000
+2018-05-16T14:40:32.159011+00:00 app[web.1]: F, [2018-05-16T14:40:32.158922 #4] FATAL -- : [aab14c2e-9978-4dbe-94fd-d58dff9b59eb]   
+2018-05-16T14:40:32.159092+00:00 app[web.1]: F, [2018-05-16T14:40:32.159016 #4] FATAL -- : [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] ActionController::RoutingError (No route matches [GET] "/users"):
+2018-05-16T14:40:32.159143+00:00 app[web.1]: F, [2018-05-16T14:40:32.159087 #4] FATAL -- : [aab14c2e-9978-4dbe-94fd-d58dff9b59eb]   
+2018-05-16T14:40:32.159220+00:00 app[web.1]: F, [2018-05-16T14:40:32.159153 #4] FATAL -- : [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+2018-05-16T14:40:32.159223+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+2018-05-16T14:40:32.159228+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+2018-05-16T14:40:32.159232+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+2018-05-16T14:40:32.159234+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+2018-05-16T14:40:32.159236+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+2018-05-16T14:40:32.159239+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+2018-05-16T14:40:32.159237+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+2018-05-16T14:40:32.159240+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+2018-05-16T14:40:32.159242+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+2018-05-16T14:40:32.159243+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+2018-05-16T14:40:32.159245+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+2018-05-16T14:40:32.159248+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+2018-05-16T14:40:32.159250+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+2018-05-16T14:40:32.159251+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+2018-05-16T14:40:32.159253+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+2018-05-16T14:40:32.159254+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+2018-05-16T14:40:32.159256+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+2018-05-16T14:40:32.159258+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+2018-05-16T14:40:32.159259+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+2018-05-16T14:40:32.159261+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+2018-05-16T14:40:32.159262+00:00 app[web.1]: [aab14c2e-9978-4dbe-94fd-d58dff9b59eb] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+2018-05-16T14:40:55.544958+00:00 heroku[router]: at=info method=GET path="/" host=nflpredictions.herokuapp.com request_id=e61c0034-d3e4-4788-8284-1ac0314ddb04 fwd="143.107.45.1" dyno=web.1 connect=1ms service=7ms status=200 bytes=1643 protocol=http
+2018-05-16T14:40:55.537832+00:00 app[web.1]: I, [2018-05-16T14:40:55.537743 #4]  INFO -- : [e61c0034-d3e4-4788-8284-1ac0314ddb04] Started GET "/" for 143.107.45.1 at 2018-05-16 14:40:55 +0000
+2018-05-16T14:40:55.538583+00:00 app[web.1]: I, [2018-05-16T14:40:55.538517 #4]  INFO -- : [e61c0034-d3e4-4788-8284-1ac0314ddb04] Processing by PagesController#index as HTML
+2018-05-16T14:40:55.539636+00:00 app[web.1]: I, [2018-05-16T14:40:55.539531 #4]  INFO -- : [e61c0034-d3e4-4788-8284-1ac0314ddb04]   Rendering pages/index.html.erb within layouts/application
+2018-05-16T14:40:55.540332+00:00 app[web.1]: I, [2018-05-16T14:40:55.540245 #4]  INFO -- : [e61c0034-d3e4-4788-8284-1ac0314ddb04]   Rendered pages/index.html.erb within layouts/application (0.5ms)
+2018-05-16T14:40:55.541764+00:00 app[web.1]: I, [2018-05-16T14:40:55.541673 #4]  INFO -- : [e61c0034-d3e4-4788-8284-1ac0314ddb04] Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+2018-05-16T14:40:55.902491+00:00 heroku[router]: at=info method=GET path="/assets/application-2afe9244071a2f234131c65fb82af32338caaa3697d790c0ccf736595debeb85.css" host=nflpredictions.herokuapp.com request_id=a0bbf70a-bd36-4a21-8281-7ae0e4b585e2 fwd="143.107.45.1" dyno=web.1 connect=0ms service=1ms status=200 bytes=416 protocol=http
+2018-05-16T14:40:55.905026+00:00 heroku[router]: at=info method=GET path="/assets/application-600e3b0854d21d6bbb2178e2320dc92683af71012de75593ab4a73c9d90ed8d8.js" host=nflpredictions.herokuapp.com request_id=28f5ccb7-acb1-4f5c-9da2-2f8d841fa9df fwd="143.107.45.1" dyno=web.1 connect=1ms service=3ms status=200 bytes=40444 protocol=http
+2018-05-16T14:40:56.507998+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nflpredictions.herokuapp.com request_id=e7586fb1-a4f0-4724-9845-7d667ba0634f fwd="143.107.45.1" dyno=web.1 connect=1ms service=2ms status=200 bytes=143 protocol=http
+2018-05-16T14:40:57.945847+00:00 app[web.1]: I, [2018-05-16T14:40:57.945708 #4]  INFO -- : [a44adce1-c33f-4401-a2f8-35522ad5e99c] Started GET "/predictions?week=1" for 143.107.45.1 at 2018-05-16 14:40:57 +0000
+2018-05-16T14:40:57.947108+00:00 app[web.1]: I, [2018-05-16T14:40:57.947009 #4]  INFO -- : [a44adce1-c33f-4401-a2f8-35522ad5e99c] Processing by PagesController#predictions as HTML
+2018-05-16T14:40:57.947213+00:00 app[web.1]: I, [2018-05-16T14:40:57.947132 #4]  INFO -- : [a44adce1-c33f-4401-a2f8-35522ad5e99c]   Parameters: {"week"=>"1"}
+2018-05-16T14:40:57.948267+00:00 app[web.1]: I, [2018-05-16T14:40:57.948182 #4]  INFO -- : [a44adce1-c33f-4401-a2f8-35522ad5e99c] Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+2018-05-16T14:40:58.323917+00:00 heroku[router]: at=info method=GET path="/users/sign_in" host=nflpredictions.herokuapp.com request_id=972c8238-db43-4aac-b41a-73e8159ffaa5 fwd="143.107.45.1" dyno=web.1 connect=1ms service=8ms status=500 bytes=1827 protocol=http
+2018-05-16T14:40:58.315124+00:00 app[web.1]: I, [2018-05-16T14:40:58.315034 #4]  INFO -- : [972c8238-db43-4aac-b41a-73e8159ffaa5] Started GET "/users/sign_in" for 143.107.45.1 at 2018-05-16 14:40:58 +0000
+2018-05-16T14:40:58.315871+00:00 app[web.1]: I, [2018-05-16T14:40:58.315809 #4]  INFO -- : [972c8238-db43-4aac-b41a-73e8159ffaa5] Processing by Devise::SessionsController#new as HTML
+2018-05-16T14:40:58.319630+00:00 app[web.1]: I, [2018-05-16T14:40:58.319563 #4]  INFO -- : [972c8238-db43-4aac-b41a-73e8159ffaa5] Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.5ms)
+2018-05-16T14:40:58.320917+00:00 app[web.1]: F, [2018-05-16T14:40:58.320851 #4] FATAL -- : [972c8238-db43-4aac-b41a-73e8159ffaa5]   
+2018-05-16T14:40:58.320985+00:00 app[web.1]: F, [2018-05-16T14:40:58.320919 #4] FATAL -- : [972c8238-db43-4aac-b41a-73e8159ffaa5] ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
+2018-05-16T14:40:58.320987+00:00 app[web.1]: LINE 8:                WHERE a.attrelid = '"users"'::regclass
+2018-05-16T14:40:58.320989+00:00 app[web.1]:                                           ^
+2018-05-16T14:40:58.320990+00:00 app[web.1]: :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2018-05-16T14:40:58.320991+00:00 app[web.1]:                      pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+2018-05-16T14:40:58.320992+00:00 app[web.1]:                      c.collname, col_description(a.attrelid, a.attnum) AS comment
+2018-05-16T14:40:58.320994+00:00 app[web.1]:                 FROM pg_attribute a
+2018-05-16T14:40:58.320995+00:00 app[web.1]:                 LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2018-05-16T14:40:58.320996+00:00 app[web.1]:                 LEFT JOIN pg_type t ON a.atttypid = t.oid
+2018-05-16T14:40:58.320997+00:00 app[web.1]:                 LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+2018-05-16T14:40:58.320999+00:00 app[web.1]:                WHERE a.attrelid = '"users"'::regclass
+2018-05-16T14:40:58.321000+00:00 app[web.1]:                  AND a.attnum > 0 AND NOT a.attisdropped
+2018-05-16T14:40:58.321001+00:00 app[web.1]:                ORDER BY a.attnum
+2018-05-16T14:40:58.321003+00:00 app[web.1]: ):
+2018-05-16T14:40:58.321025+00:00 app[web.1]: F, [2018-05-16T14:40:58.320978 #4] FATAL -- : [972c8238-db43-4aac-b41a-73e8159ffaa5]   
+2018-05-16T14:40:58.321145+00:00 app[web.1]: F, [2018-05-16T14:40:58.321054 #4] FATAL -- : [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:61:in `async_exec'
+2018-05-16T14:40:58.321147+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:61:in `block (2 levels) in query'
+2018-05-16T14:40:58.321149+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/dependencies/interlock.rb:46:in `block in permit_concurrent_loads'
+2018-05-16T14:40:58.321150+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/concurrency/share_lock.rb:185:in `yield_shares'
+2018-05-16T14:40:58.321151+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/dependencies/interlock.rb:45:in `permit_concurrent_loads'
+2018-05-16T14:40:58.321152+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:60:in `block in query'
+2018-05-16T14:40:58.321154+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract_adapter.rb:613:in `block (2 levels) in log'
+2018-05-16T14:40:58.321155+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/ruby-2.3.7/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+2018-05-16T14:40:58.321156+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block in log'
+2018-05-16T14:40:58.321158+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+2018-05-16T14:40:58.321159+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract_adapter.rb:604:in `log'
+2018-05-16T14:40:58.321160+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:59:in `query'
+2018-05-16T14:40:58.321162+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:765:in `column_definitions'
+2018-05-16T14:40:58.321163+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract_adapter.rb:167:in `columns'
+2018-05-16T14:40:58.321164+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/schema_cache.rb:67:in `columns'
+2018-05-16T14:40:58.321165+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/schema_cache.rb:73:in `columns_hash'
+2018-05-16T14:40:58.321167+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:471:in `load_schema!'
+2018-05-16T14:40:58.321168+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/attributes.rb:233:in `load_schema!'
+2018-05-16T14:40:58.321169+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/attribute_decorators.rb:50:in `load_schema!'
+2018-05-16T14:40:58.321170+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:464:in `block in load_schema'
+2018-05-16T14:40:58.321172+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/ruby-2.3.7/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+2018-05-16T14:40:58.321173+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:461:in `load_schema'
+2018-05-16T14:40:58.321174+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:353:in `attribute_types'
+2018-05-16T14:40:58.321175+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/attribute_methods.rb:179:in `has_attribute?'
+2018-05-16T14:40:58.321176+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/inheritance.rb:55:in `new'
+2018-05-16T14:40:58.321179+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/devise-4.4.3/app/controllers/devise/sessions_controller.rb:11:in `new'
+2018-05-16T14:40:58.321180+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+2018-05-16T14:40:58.321182+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+2018-05-16T14:40:58.321183+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+2018-05-16T14:40:58.321184+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+2018-05-16T14:40:58.321185+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:131:in `run_callbacks'
+2018-05-16T14:40:58.321186+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+2018-05-16T14:40:58.321187+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+2018-05-16T14:40:58.321188+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+2018-05-16T14:40:58.321189+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+2018-05-16T14:40:58.321190+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+2018-05-16T14:40:58.321192+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+2018-05-16T14:40:58.321193+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+2018-05-16T14:40:58.321194+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+2018-05-16T14:40:58.321195+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+2018-05-16T14:40:58.321196+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+2018-05-16T14:40:58.321197+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+2018-05-16T14:40:58.321198+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+2018-05-16T14:40:58.321200+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+2018-05-16T14:40:58.321201+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+2018-05-16T14:40:58.321202+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+2018-05-16T14:40:58.321203+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+2018-05-16T14:40:58.321204+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/mapper.rb:46:in `serve'
+2018-05-16T14:40:58.321205+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+2018-05-16T14:40:58.321206+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+2018-05-16T14:40:58.321208+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+2018-05-16T14:40:58.321209+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+2018-05-16T14:40:58.321210+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+2018-05-16T14:40:58.321214+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+2018-05-16T14:40:58.321215+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+2018-05-16T14:40:58.321216+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/etag.rb:25:in `call'
+2018-05-16T14:40:58.321217+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/conditional_get.rb:25:in `call'
+2018-05-16T14:40:58.321218+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/head.rb:12:in `call'
+2018-05-16T14:40:58.321219+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/session/abstract/id.rb:232:in `context'
+2018-05-16T14:40:58.321221+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/session/abstract/id.rb:226:in `call'
+2018-05-16T14:40:58.321222+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+2018-05-16T14:40:58.321223+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+2018-05-16T14:40:58.321224+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+2018-05-16T14:40:58.321225+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+2018-05-16T14:40:58.321227+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+2018-05-16T14:40:58.321228+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+2018-05-16T14:40:58.321229+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+2018-05-16T14:40:58.321230+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+2018-05-16T14:40:58.321231+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+2018-05-16T14:40:58.321233+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+2018-05-16T14:40:58.321234+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+2018-05-16T14:40:58.321235+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+2018-05-16T14:40:58.321236+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+2018-05-16T14:40:58.321237+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+2018-05-16T14:40:58.321238+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+2018-05-16T14:40:58.321240+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+2018-05-16T14:40:58.321241+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+2018-05-16T14:40:58.321242+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+2018-05-16T14:40:58.321243+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+2018-05-16T14:40:58.321244+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+2018-05-16T14:40:58.321245+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+2018-05-16T14:40:58.321246+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+2018-05-16T14:40:58.321247+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+2018-05-16T14:40:58.321248+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+2018-05-16T14:40:58.321251+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+2018-05-16T14:40:58.321252+00:00 app[web.1]: [972c8238-db43-4aac-b41a-73e8159ffaa5] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+2018-05-16T14:40:57.952695+00:00 heroku[router]: at=info method=GET path="/predictions?week=1" host=nflpredictions.herokuapp.com request_id=a44adce1-c33f-4401-a2f8-35522ad5e99c fwd="143.107.45.1" dyno=web.1 connect=1ms service=6ms status=302 bytes=993 protocol=http
+   2018-05-16T14:42:54.336995+00:00 heroku[router]: at=info method=GET path="/predictions?week=1" host=nflpredictions.herokuapp.com request_id=6dde15a8-48be-476a-88bc-7ca02ca479ff fwd="143.107.45.1" dyno=web.1 connect=0ms service=6ms status=302 bytes=993 protocol=http
+2018-05-16T14:42:54.331042+00:00 app[web.1]: I, [2018-05-16T14:42:54.330904 #4]  INFO -- : [6dde15a8-48be-476a-88bc-7ca02ca479ff] Started GET "/predictions?week=1" for 143.107.45.1 at 2018-05-16 14:42:54 +0000
+2018-05-16T14:42:54.332178+00:00 app[web.1]: I, [2018-05-16T14:42:54.332092 #4]  INFO -- : [6dde15a8-48be-476a-88bc-7ca02ca479ff] Processing by PagesController#predictions as HTML
+2018-05-16T14:42:54.332279+00:00 app[web.1]: I, [2018-05-16T14:42:54.332198 #4]  INFO -- : [6dde15a8-48be-476a-88bc-7ca02ca479ff]   Parameters: {"week"=>"1"}
+2018-05-16T14:42:54.333449+00:00 app[web.1]: I, [2018-05-16T14:42:54.333363 #4]  INFO -- : [6dde15a8-48be-476a-88bc-7ca02ca479ff] Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+2018-05-16T14:42:54.566546+00:00 app[web.1]: I, [2018-05-16T14:42:54.566428 #4]  INFO -- : [9134995d-5fbe-4c90-b109-d7819519d61a] Started GET "/users/sign_in" for 143.107.45.1 at 2018-05-16 14:42:54 +0000
+2018-05-16T14:42:54.567788+00:00 app[web.1]: I, [2018-05-16T14:42:54.567704 #4]  INFO -- : [9134995d-5fbe-4c90-b109-d7819519d61a] Processing by Devise::SessionsController#new as HTML
+2018-05-16T14:42:54.571914+00:00 app[web.1]: I, [2018-05-16T14:42:54.571823 #4]  INFO -- : [9134995d-5fbe-4c90-b109-d7819519d61a] Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.5ms)
+2018-05-16T14:42:54.573932+00:00 app[web.1]: F, [2018-05-16T14:42:54.573832 #4] FATAL -- : [9134995d-5fbe-4c90-b109-d7819519d61a]   
+2018-05-16T14:42:54.574054+00:00 app[web.1]: F, [2018-05-16T14:42:54.573958 #4] FATAL -- : [9134995d-5fbe-4c90-b109-d7819519d61a] ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
+2018-05-16T14:42:54.574058+00:00 app[web.1]: LINE 8:                WHERE a.attrelid = '"users"'::regclass
+2018-05-16T14:42:54.574060+00:00 app[web.1]:                                           ^
+2018-05-16T14:42:54.574062+00:00 app[web.1]: :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2018-05-16T14:42:54.574064+00:00 app[web.1]:                      pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+2018-05-16T14:42:54.574065+00:00 app[web.1]:                      c.collname, col_description(a.attrelid, a.attnum) AS comment
+2018-05-16T14:42:54.574066+00:00 app[web.1]:                 FROM pg_attribute a
+2018-05-16T14:42:54.574067+00:00 app[web.1]:                 LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2018-05-16T14:42:54.574069+00:00 app[web.1]:                 LEFT JOIN pg_type t ON a.atttypid = t.oid
+2018-05-16T14:42:54.574070+00:00 app[web.1]:                 LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+2018-05-16T14:42:54.574072+00:00 app[web.1]:                WHERE a.attrelid = '"users"'::regclass
+2018-05-16T14:42:54.574073+00:00 app[web.1]:                  AND a.attnum > 0 AND NOT a.attisdropped
+2018-05-16T14:42:54.574074+00:00 app[web.1]:                ORDER BY a.attnum
+2018-05-16T14:42:54.574076+00:00 app[web.1]: ):
+2018-05-16T14:42:54.574137+00:00 app[web.1]: F, [2018-05-16T14:42:54.574061 #4] FATAL -- : [9134995d-5fbe-4c90-b109-d7819519d61a]   
+2018-05-16T14:42:54.574323+00:00 app[web.1]: F, [2018-05-16T14:42:54.574194 #4] FATAL -- : [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:61:in `async_exec'
+2018-05-16T14:42:54.574325+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:61:in `block (2 levels) in query'
+2018-05-16T14:42:54.574327+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/dependencies/interlock.rb:46:in `block in permit_concurrent_loads'
+2018-05-16T14:42:54.574328+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/concurrency/share_lock.rb:185:in `yield_shares'
+2018-05-16T14:42:54.574330+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/dependencies/interlock.rb:45:in `permit_concurrent_loads'
+2018-05-16T14:42:54.574331+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:60:in `block in query'
+2018-05-16T14:42:54.574332+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract_adapter.rb:613:in `block (2 levels) in log'
+2018-05-16T14:42:54.574333+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/ruby-2.3.7/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+2018-05-16T14:42:54.574335+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block in log'
+2018-05-16T14:42:54.574336+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+2018-05-16T14:42:54.574337+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract_adapter.rb:604:in `log'
+2018-05-16T14:42:54.574338+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql/database_statements.rb:59:in `query'
+2018-05-16T14:42:54.574340+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:765:in `column_definitions'
+2018-05-16T14:42:54.574341+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/abstract_adapter.rb:167:in `columns'
+2018-05-16T14:42:54.574342+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/schema_cache.rb:67:in `columns'
+2018-05-16T14:42:54.574343+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/connection_adapters/schema_cache.rb:73:in `columns_hash'
+2018-05-16T14:42:54.574344+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:471:in `load_schema!'
+2018-05-16T14:42:54.574345+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/attributes.rb:233:in `load_schema!'
+2018-05-16T14:42:54.574347+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/attribute_decorators.rb:50:in `load_schema!'
+2018-05-16T14:42:54.574348+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:464:in `block in load_schema'
+2018-05-16T14:42:54.574349+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/ruby-2.3.7/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+2018-05-16T14:42:54.574350+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:461:in `load_schema'
+2018-05-16T14:42:54.574366+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/model_schema.rb:353:in `attribute_types'
+2018-05-16T14:42:54.574368+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/attribute_methods.rb:179:in `has_attribute?'
+2018-05-16T14:42:54.574369+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/inheritance.rb:55:in `new'
+2018-05-16T14:42:54.574376+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/devise-4.4.3/app/controllers/devise/sessions_controller.rb:11:in `new'
+2018-05-16T14:42:54.574377+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+2018-05-16T14:42:54.574379+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+2018-05-16T14:42:54.574380+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+2018-05-16T14:42:54.574382+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+2018-05-16T14:42:54.574384+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:131:in `run_callbacks'
+2018-05-16T14:42:54.574386+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+2018-05-16T14:42:54.574388+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+2018-05-16T14:42:54.574389+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+2018-05-16T14:42:54.574391+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+2018-05-16T14:42:54.574393+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+2018-05-16T14:42:54.574396+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+2018-05-16T14:42:54.574397+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+2018-05-16T14:42:54.574398+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+2018-05-16T14:42:54.574400+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+2018-05-16T14:42:54.574401+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+2018-05-16T14:42:54.574402+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+2018-05-16T14:42:54.574403+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+2018-05-16T14:42:54.574404+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+2018-05-16T14:42:54.574406+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+2018-05-16T14:42:54.574407+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+2018-05-16T14:42:54.574408+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+2018-05-16T14:42:54.574409+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/mapper.rb:46:in `serve'
+2018-05-16T14:42:54.574410+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+2018-05-16T14:42:54.574411+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+2018-05-16T14:42:54.574413+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+2018-05-16T14:42:54.574414+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+2018-05-16T14:42:54.574415+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+2018-05-16T14:42:54.574419+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+2018-05-16T14:42:54.574421+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+2018-05-16T14:42:54.574422+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/etag.rb:25:in `call'
+2018-05-16T14:42:54.574423+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/conditional_get.rb:25:in `call'
+2018-05-16T14:42:54.574424+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/head.rb:12:in `call'
+2018-05-16T14:42:54.574425+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/session/abstract/id.rb:232:in `context'
+2018-05-16T14:42:54.574426+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/session/abstract/id.rb:226:in `call'
+2018-05-16T14:42:54.574428+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+2018-05-16T14:42:54.574429+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+2018-05-16T14:42:54.574430+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+2018-05-16T14:42:54.574431+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+2018-05-16T14:42:54.574432+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+2018-05-16T14:42:54.574434+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+2018-05-16T14:42:54.574435+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+2018-05-16T14:42:54.574436+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+2018-05-16T14:42:54.574437+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+2018-05-16T14:42:54.574438+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+2018-05-16T14:42:54.574439+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+2018-05-16T14:42:54.574441+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+2018-05-16T14:42:54.574442+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+2018-05-16T14:42:54.574443+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+2018-05-16T14:42:54.574444+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+2018-05-16T14:42:54.574445+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+2018-05-16T14:42:54.574446+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+2018-05-16T14:42:54.574448+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+2018-05-16T14:42:54.574449+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+2018-05-16T14:42:54.574450+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+2018-05-16T14:42:54.574451+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+2018-05-16T14:42:54.574452+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+2018-05-16T14:42:54.574453+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+2018-05-16T14:42:54.574454+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+2018-05-16T14:42:54.574457+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+2018-05-16T14:42:54.574458+00:00 app[web.1]: [9134995d-5fbe-4c90-b109-d7819519d61a] vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+2018-05-16T14:42:54.576056+00:00 heroku[router]: at=info method=GET path="/users/sign_in" host=nflpredictions.herokuapp.com request_id=9134995d-5fbe-4c90-b109-d7819519d61a fwd="143.107.45.1" dyno=web.1 connect=0ms service=9ms status=500 bytes=1827 protocol=http
+2018-05-16T14:42:54.858398+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nflpredictions.herokuapp.com request_id=79ed7912-8cdc-44ec-8734-34f9ef00a62a fwd="143.107.45.1" dyno=web.1 connect=1ms service=2ms status=304 bytes=48 protocol=http
