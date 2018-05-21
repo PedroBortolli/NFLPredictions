@@ -1,30 +1,17 @@
 class PagesController < ApplicationController
 	skip_before_action :verify_authenticity_token
-	before_action :authenticate_user!, :except => [:index, :about]
+	before_action :authenticate_user!, :except => [:index, :about, :view, :result]
 	include PagesHelper
 
 	def predictions
-		url = "https://www.fantasyfootballnerd.com/service/schedule/json/56rzxuc2a53b/"
-		schedule = call_api(url)["Schedule"]
-		parsed_schedule = Hash.new{|h,k| h[k] = Array.new}
+		@schedule = load_schedule
+		@games_picked = load_user_picks (current_user.username)
+	end
 
-		url = "https://www.fantasyfootballnerd.com/service/weather/json/56rzxuc2a53b/"
-		games_info = call_api(url)
-
-		for game in schedule
-			parsed_schedule[game["gameWeek"]].push(game)
-		end
-
-		@games_picked = Hash.new
-		database = Prediction.all
-
-		for data in database
-			if data.user == current_user.username
-				@games_picked.store(data.gameId, data.winner) 
-			end
-		end
-
-		@content = parsed_schedule
+	def view
+		@username = params[:user]
+		@schedule = load_schedule
+		@games_picked = load_user_picks (@username)
 	end
 
 	def index
@@ -38,7 +25,7 @@ class PagesController < ApplicationController
 		database = Prediction.all
 		for data in database
 			puts("(" + data.user.to_s + ")  =>  " + data.winner.to_s + " " + data.gameId.to_s)
-			#data.delete
+			data.delete
 		end
 	end
 

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'result' => 'pages#result'
   post 'update' => 'pages#update'
+  get 'view' => 'pages#view'
 end

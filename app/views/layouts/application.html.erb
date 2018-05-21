@@ -8,13 +8,21 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <div class = "w3-container w3-teal", style = "text-align: right; font-size: 18px"}>
-	    <% if user_signed_in? %>
-	    	<%= link_to "#{current_user.username.to_s}", root_url %>
-	    	<%= link_to('Logout', destroy_user_session_path, method: :delete) %> 
-	    <% else %>
-	    	<%= link_to('Login', new_user_session_path)  %>
-	    <% end %>
+    <div class = "w3-container w3-teal", style = "font-size: 18px"}>
+      <div style = "text-align: left">
+        <%= link_to('Home', root_path) %>
+      </div>
+      <div style = "text-align: right">
+      <% if user_signed_in? %>
+        <%= link_to "#{current_user.username.to_s}", root_url %>
+        &nbsp;
+        <%= link_to('Logout', destroy_user_session_path, method: :delete) %> 
+      <% else %>
+        <%= link_to('Login', new_user_session_path)  %>
+        &nbsp;
+        <%= link_to('Sign up', new_user_registration_path) %>
+      <% end %>
+      </div>
     </div>
   </head>
 

@@ -4,7 +4,19 @@
 	<% end %>
 	</br>
 
-	<%= link_to('Your predictions', '/predictions?week=1') %>
+	<%= link_to('Your predictions', '/predictions?week=1', {:style=>'font-size: 150%'}) %>
 	</br>
-	Compare (not implemented yet)
+	</br>
+
+	
+	<%= form_tag "/view?week=1", method:'get' do %>
+	<%= text_field_tag :user, nil, placeholder: "View other players\' predictions!", size:"23" %>
+	<%= hidden_field_tag :week , "1" %>
+	</br>
+	<%= submit_tag "View!" %>
+	<% end %>
+
+	</br>
+
+	<h4>Compare (not implemented yet)</h4>
 </body>
