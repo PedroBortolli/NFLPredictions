@@ -40,4 +40,14 @@ module PagesHelper
 		end
 		return games_picked
 	end
+
+	def user_exists (username)
+		user_database = User.all
+		for user in user_database
+			if user.username == username
+				return true
+			end
+		end
+		return false
+	end
 end

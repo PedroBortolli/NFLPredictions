@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'result' => 'pages#result'
   post 'update' => 'pages#update'
   get 'view' => 'pages#view'
+  get 'compare' => 'pages#compare'
 end

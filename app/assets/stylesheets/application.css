@@ -39,3 +39,20 @@
 .box {
 	border: 2px solid green;
 }
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows: auto;
+	grid-column-gap: 2px;
+	grid-row-gap: 25px;
+	align-items: center;	
+}
+
+.form_css {
+	text-align: center;
+}
+
+.brq {
+   	line-height: 200%;
+}

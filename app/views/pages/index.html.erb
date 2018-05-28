@@ -7,16 +7,32 @@
 	<%= link_to('Your predictions', '/predictions?week=1', {:style=>'font-size: 150%'}) %>
 	</br>
 	</br>
+	</br>
+	</br>
 
 	
-	<%= form_tag "/view?week=1", method:'get' do %>
-	<%= text_field_tag :user, nil, placeholder: "View other players\' predictions!", size:"23" %>
+	<h4>View other player's predictions</h4>
+	<%= form_tag "/view", method:'get' do %>
+	<%= text_field_tag :user, nil, placeholder: "Insert an username here", class: "form_css", size:"23" %>
 	<%= hidden_field_tag :week , "1" %>
 	</br>
 	<%= submit_tag "View!" %>
 	<% end %>
+	<div id="alert" style="color: red"><%= alert %></div>
 
 	</br>
+	</br>
+	</br>
 
-	<h4>Compare (not implemented yet)</h4>
+
+	<h4>Compare</h4>
+	<%= form_tag "/compare", method:'get' do %>
+	<%= text_field_tag :user1	, nil, placeholder: "Insert an username here", class: "form_css", size:"23" %>
+	</br>
+	<%= text_field_tag :user2, nil, placeholder: "Insert an username here", class: "form_css", size:"23" %>
+	</br>
+	<%= hidden_field_tag :week , "1" %>
+	<%= submit_tag "Compare!" %>
+	<div id="notice" style="color: red"><%= notice %></div>
+	<% end %>
 </body>
