@@ -7,6 +7,7 @@ class PagesController < ApplicationController
 	def predictions
 		@schedule = load_schedule
 		@games_picked = load_user_picks (current_user.username)
+		@username = current_user.username
 	end
 
 	#esse metodo ta funcionando de boa, mesmo a cada acesso de /view ele pega o params[:user] corretamente
