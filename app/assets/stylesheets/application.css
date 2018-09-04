@@ -29,7 +29,7 @@
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 	grid-auto-rows: auto;
 	grid-column-gap: 2px;
 	grid-row-gap: 25px;
@@ -55,4 +55,23 @@
 
 .brq {
    	line-height: 200%;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 2% 13% 5% 60% 5% 13% 2%;
+  grid-template-rows: 500px;
+}
+
+.left {
+  grid-column-start: 2;
+  //background-color: #4763ff;
+}
+.middle {
+  grid-column-start: 4;
+  //background-color: #ffcb47;
+}
+.right {
+  grid-column-start: 6;
+  //background-color: #f347ff;
 }

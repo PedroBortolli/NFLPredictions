@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
 	skip_before_action :verify_authenticity_token
-	before_action :authenticate_user!, :except => [:index, :about, :view, :result, :compare]
+	before_action :authenticate_user!, :except => [:index, :about, :view, :result, :compare, :standings]
 	include PagesHelper
+	include Scrapper
 
 	def predictions
 		@schedule = load_schedule
@@ -36,7 +37,7 @@ class PagesController < ApplicationController
 	end
 
 	def about
-		render html: "Alou"
+		@blabla = teste_scrapper
 	end
 
 	def result
@@ -62,5 +63,51 @@ class PagesController < ApplicationController
 			prediction.winner = winner
 		end
 		prediction.save
+	end
+
+	def standings
+		@username = params[:user]
+		@schedule = load_schedule
+		@games_picked = load_user_picks(@username)
+		@wins = Hash.new
+		@total = Hash.new
+		for week in 1..17
+			for game in @schedule[week.to_s]
+				home = game["homeTeam"]
+				away = game["awayTeam"]
+				if !(@total.key?(home))
+					@total.store(home, 0)
+					@wins.store(home, 0)
+				end
+				if !(@total.key?(away))
+					@total.store(away, 0)
+					@wins.store(away, 0)
+				end
+				if @games_picked.key?(game["gameId"])
+					picked = @games_picked[game["gameId"]]
+					if @wins.key?(picked)
+						@wins[picked] += 1
+					end
+					@total[home] += 1
+					@total[away] += 1
+				end
+			end
+		end
+		@afc_east = [['NE', @wins['NE']], ['NYJ', @wins['NYJ']], ['BUF', @wins['BUF']], ['MIA', @wins['BUF']]]
+		@afc_east = @afc_east.sort { |a, b| b[1] <=> a[1] }
+		@afc_north = [['PIT', @wins['PIT']], ['CIN', @wins['CIN']], ['BAL', @wins['BAL']], ['CLE', @wins['CLE']]]
+		@afc_north = @afc_north.sort { |a, b| b[1] <=> a[1] }
+		@afc_west = [['DEN', @wins['DEN']], ['LAC', @wins['LAC']], ['OAK', @wins['OAK']], ['KC', @wins['OAK']]]
+		@afc_west = @afc_west.sort { |a, b| b[1] <=> a[1] }
+		@afc_south = [['IND', @wins['IND']], ['HOU', @wins['HOU']], ['JAC', @wins['JAC']], ['TEN', @wins['TEN']]]
+		@afc_south = @afc_south.sort { |a, b| b[1] <=> a[1] }
+		@nfc_east = [['DAL', @wins['DAL']], ['WAS', @wins['WAS']], ['NYG', @wins['NYG']], ['PHI', @wins['PHI']]]
+		@nfc_east = @nfc_east.sort { |a, b| b[1] <=> a[1] }
+		@nfc_north = [['GB', @wins['GB']], ['MIN', @wins['MIN']], ['CHI', @wins['CHI']], ['DET', @wins['DET']]]
+		@nfc_north = @nfc_north.sort { |a, b| b[1] <=> a[1] }
+		@nfc_west = [['SEA', @wins['SEA']], ['ARI', @wins['ARI']], ['SF', @wins['SF']], ['LAR', @wins['LAR']]]
+		@nfc_west = @nfc_west.sort { |a, b| b[1] <=> a[1] }
+		@nfc_south = [['CAR', @wins['CAR']], ['TB', @wins['TB']], ['NO', @wins['NO']], ['ATL', @wins['ATL']]]
+		@nfc_south = @nfc_south.sort { |a, b| b[1] <=> a[1] }
 	end
 end

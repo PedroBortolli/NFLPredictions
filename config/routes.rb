@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   post 'update' => 'pages#update'
   get 'view' => 'pages#view'
   get 'compare' => 'pages#compare'
+  get 'standings' => 'pages#standings'
 end

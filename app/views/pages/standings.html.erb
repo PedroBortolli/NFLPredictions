@@ -1,0 +1,129 @@
+<body class = "background">
+	<div class="grid2">
+		<div class="left">
+			AFC East
+			<br/>
+			<% for entry in @afc_east %>
+				<% team = entry[0] %>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= team %>
+				</div>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= @wins[team] %>-<%= @total[team]-@wins[team] %>
+				</div>
+				<br/>
+			<% end %>
+			<br/>
+			AFC North
+			<br/>
+			<% for entry in @afc_north %>
+				<% team = entry[0] %>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= team %>
+				</div>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= @wins[team] %>-<%= @total[team]-@wins[team] %>
+				</div>
+				<br/>
+			<% end %>
+			<br/>
+			AFC West
+			<br/>
+			<% for entry in @afc_west %>
+				<% team = entry[0] %>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= team %>
+				</div>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= @wins[team] %>-<%= @total[team]-@wins[team] %>
+				</div>
+				<br/>
+			<% end %>
+			<br/>
+			AFC South
+			<br/>
+			<% for entry in @afc_south %>
+				<% team = entry[0] %>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= team %>
+				</div>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= @wins[team] %>-<%= @total[team]-@wins[team] %>
+				</div>
+				<br/>
+			<% end %>
+		</div>
+
+		<div class="middle centered">
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<h2>Standings based on <%= @username %>'s predictions</h2>
+			<br/>
+			<br/>
+			<br/>
+			<h3>Playoff teams</h3>
+			<i>Not available on this version yet...</i>
+		</div>
+
+		<div class="right">
+			<div style="float: right;margin-right: 35px;">
+			NFC East
+			</div>
+			<br/>
+			<div style="float: right;">
+			<% for entry in @nfc_east %>
+				<% team = entry[0] %>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= team %>
+				</div>
+				<div style="width: 30px; float: left; display:inline;">
+				<%= @wins[team] %>-<%= @total[team]-@wins[team] %>
+				</div>
+				<br/>
+			<% end %>
+			<br/>
+			NFC North
+			<br/>
+			<% for entry in @nfc_north %>
+				<% team = entry[0] %>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= team %>
+				</div>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= @wins[team] %>-<%= @total[team]-@wins[team] %>
+				</div>
+				<br/>
+			<% end %>
+			<br/>
+			NFC West
+			<br/>
+			<% for entry in @nfc_west %>
+				<% team = entry[0] %>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= team %>
+				</div>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= @wins[team] %>-<%= @total[team]-@wins[team] %>
+				</div>
+				<br/>
+			<% end %>
+			<br/>
+			NFC South
+			<br/>
+			<% for entry in @nfc_south %>
+				<% team = entry[0] %>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= team %>
+				</div>
+				<div style="width: 50px; float: left; display:inline;">
+				<%= @wins[team] %>-<%= @total[team]-@wins[team] %>
+				</div>
+				<br/>
+			<% end %>
+			</div>
+		</div>
+	</div>
+</body>
