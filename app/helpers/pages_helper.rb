@@ -69,8 +69,6 @@ module PagesHelper
 				end
 			end
 		end
-		result[1].store(1, true)
-		result[1].store(2, false)
 		return result
 	end
 

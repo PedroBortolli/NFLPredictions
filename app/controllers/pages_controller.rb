@@ -76,11 +76,13 @@ class PagesController < ApplicationController
 	end
 
 	def result
-		#database = Prediction.all
-		#for data in database
-		#	puts("(" + data.user.to_s + ")  =>  " + data.winner.to_s + " " + data.gameId.to_s)
-		#	data.delete
-		#end
+		database = Prediction.all
+		for data in database
+			user = data.user
+			if user == "jonas" or user == "jujudopredo" or user == "eeeeeeee" or user == "teste" or user == "teste1"
+				data.delete
+			end
+		end
 	end
 
 	def update
