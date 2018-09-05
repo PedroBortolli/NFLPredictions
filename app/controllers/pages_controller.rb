@@ -38,6 +38,36 @@ class PagesController < ApplicationController
 		@week_score2, @overall_score2 = count_result(@username2, @result2)
 	end
 
+	def ranking
+		database = Prediction.all
+		seen = Hash.new
+		@rank = Array.new
+		for data in database
+			if !(seen.key?(data.user))
+				seen.store(data.user, true)
+				result = picks_result(@username)
+				week_score, overall_score = count_result(data.user, result)
+				@rank.push([overall_score[0], overall_score[1], data.user])
+			end
+		end
+		@rank = @rank.sort{ |a, b| b[0] <=> a[0]}
+		cont = 0
+		@ret = Array.new
+		for user in @rank
+			aux = user.clone
+			if cont > 0
+				if user[0] < @ret[cont-1][0]
+					aux.push(cont+1)
+				else aux.push(@ret[cont-1][3])
+				end
+			else
+				aux.push(1)
+			end
+			@ret.push(aux)
+			cont += 1
+		end
+	end
+
 	def index
 	end
 

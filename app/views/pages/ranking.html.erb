@@ -1,0 +1,8 @@
+<body class="background centered">
+	<h1><u>Ranking</u></h1>
+	<br/>
+	<br/>
+	<% for user in @ret %>
+		<h3><%= user[3] %>. <%= user[2]%> &nbsp; <font color="red"><%= user[0] %>-<%= user[1] %></font></h3>
+	<% end %>
+</body>

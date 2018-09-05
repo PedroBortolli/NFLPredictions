@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'view' => 'pages#view'
   get 'compare' => 'pages#compare'
   get 'standings' => 'pages#standings'
+  get 'ranking' => 'pages#ranking'
 end
