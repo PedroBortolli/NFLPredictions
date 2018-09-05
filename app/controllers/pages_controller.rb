@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 	skip_before_action :verify_authenticity_token
-	before_action :authenticate_user!, :except => [:index, :about, :view, :result, :compare, :standings]
+	before_action :authenticate_user!, :except => [:index, :about, :view, :result, :compare, :standings, :ranking]
 	include PagesHelper
 	include Scrapper
 
@@ -72,17 +72,11 @@ class PagesController < ApplicationController
 	end
 
 	def about
-		@blabla = teste_scrapper
+		
 	end
 
 	def result
-		database = Prediction.all
-		for data in database
-			user = data.user
-			if user == "jonas" or user == "jujudopredo" or user == "eeeeeeee" or user == "teste" or user == "teste1"
-				data.delete
-			end
-		end
+
 	end
 
 	def update
