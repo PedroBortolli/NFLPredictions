@@ -1,5 +1,5 @@
 <body class = "background centered">
-	<h1><%= @username1 %> x <%= @username2 %></h1>
+	<h1><i>(<font color="red"><%= @overall_score1[0]%>-<%= @overall_score1[1]%></font>)</i> <%= @username1 %> x <%= @username2 %> <i>(<font color="red"><%= @overall_score2[0]%>-<%= @overall_score2[1]%></font>)</i></h1>
 	<% for week in 1..17 %>
 		<%= link_to(week.to_s, '/compare?user1=' + @username1.to_s + '&user2=' + @username2.to_s + '&week=' + week.to_s, {:style=>'font-size: 150%'}) %>
 		&nbsp;
@@ -12,12 +12,34 @@
 	</br>
 	<div class = "grid">
 		<% for game in @schedule[week.to_s] %>
+			<% color1 = "" %>
+			<% if !can_pick(game["gameDate"], game["gameTimeET"]) %>
+				<% color1 = "grey" %>
+			<% end %>
+			<% if @result1[week.to_i].key?((game["gameId"]).to_i) %>
+				<% if @result1[week.to_i][(game["gameId"]).to_i] == true %>
+					<% color1 = "#53BD62" %>
+				<% else %>
+					<% color1 = "#C45057" %>
+				<% end %>
+			<% end %>
+			<% color2 = "" %>
+			<% if !can_pick(game["gameDate"], game["gameTimeET"]) %>
+				<% color2 = "grey" %>
+			<% end %>
+			<% if @result2[week.to_i].key?((game["gameId"]).to_i) %>
+				<% if @result2[week.to_i][(game["gameId"]).to_i] == true %>
+					<% color2 = "#53BD62" %>
+				<% else %>
+					<% color2 = "#C45057" %>
+				<% end %>
+			<% end %>
 			<div class = "box centered">
 				<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", size: "40x27", class: "img-responsive") %> 
 				<%= image_tag("@.png", size: "25x25", class: "img-responsive") %>
 				<%= image_tag("logos/#{game["homeTeam"]}.png", alt: "#{game["homeTeam"]} logo", id: "#{game["homeTeam"]}", size: "40x27", class: "img-responsive") %>
 				<hr style="margin: 5px; color: black">
-				<div style = "float:left;width: 50%;margin: 0 auto;">
+				<div style = "float:left;width: 50%;margin: 0 auto;background-color: <%= color1 %>">
 					<i><%= @username1 %></i>
 					<hr style="margin: 5px; visibility: hidden">
 					<% if @games_picked_1.key?(game["gameId"]) %>
@@ -25,7 +47,7 @@
 						<%= image_tag("logos/#{team}.png", alt: "#{team} logo", id: "#{team}", size: "90x50", class: "img-responsive") %>	
 					<% end %>
 				</div>
-				<div style = "float:left;width: 50%;margin: 0 auto;">
+				<div style = "float:left;width: 50%;margin: 0 auto;background-color: <%= color2 %>">
 					<i><%= @username2 %></i>
 					<hr style="margin: 5px; visibility: hidden">
 					<% if @games_picked_2.key?(game["gameId"]) %>

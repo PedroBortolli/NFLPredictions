@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'predictions' => 'pages#predictions'
   get 'about' => 'pages#about'
-  get 'result' => 'pages#result'
+  #get 'result' => 'pages#result'
   post 'update' => 'pages#update'
   get 'view' => 'pages#view'
   get 'compare' => 'pages#compare'

@@ -1,5 +1,5 @@
 <body class = "background centered">
-	<h1><%= @username %>'s picks</h1>
+	<h1><%= @username %> &nbsp; <i>(Overall: <font color="red"><%= @overall_score[0]%>-<%= @overall_score[1]%></font>)</i></h1>
 	<% for week in 1..17 %>
 		<%= link_to(week.to_s, '/view?user=' + @username.to_s + '&week=' + week.to_s, {:style=>'font-size: 150%'}) %>
 		&nbsp;
@@ -9,11 +9,22 @@
 	<br/>
 	<% week = params[:week] %>
 	<h2>Week <%= week %></h2>
-	</br>
+	<h3><i>Score: <font color="red"><%= @week_score[week.to_i][0] %>-<%= @week_score[week.to_i][1] %></font></i></h3>
 	</br>
 	<div class = "grid">
 		<% for game in @schedule[week.to_s] %>
-			<div class = "box centered">
+			<% color = "" %>
+			<% if !can_pick(game["gameDate"], game["gameTimeET"]) %>
+				<% color = "grey" %>
+			<% end %>
+			<% if @result[week.to_i].key?((game["gameId"]).to_i) %>
+				<% if @result[week.to_i][(game["gameId"]).to_i] == true %>
+					<% color = "#53BD62" %>
+				<% else %>
+					<% color = "#C45057" %>
+				<% end %>
+			<% end %>
+			<div class = "box centered" style="background-color: <%= color %>;">
 				<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", size: "120x70", class: "img-responsive") %> 
 				<!--&nbsp;&nbsp;&nbsp;&nbsp;-->
 				<%= image_tag("@.png", size: "50x50", class: "img-responsive") %>

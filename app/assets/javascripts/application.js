@@ -14,15 +14,21 @@
 //= require_tree
 //= require jquery
 
-function click_on_image(winner, loser, gameId) {
-	//console.log(winner, id)
-	update_logo(winner, true)
-	update_logo(loser, false)
+
+function click_on_image(winner, loser, gameId, gameDay, gameTimeET) {
+	console.log(gameDay)
+	console.log(gameTimeET)
 	jQuery.ajax({
-		data: {gameWinner: winner, gameId: gameId},
+		data: {gameWinner: winner, gameId: gameId, gameDay: gameDay, gameTimeET: gameTimeET},
 		dataType: 'script',
 		type: 'post',
-		url: "/update"
+		url: "/update",
+		success: function(status) {
+			if (status === "true") {
+				update_logo(winner, true);
+				update_logo(loser, false);
+			}
+		}
 	});
 }
 

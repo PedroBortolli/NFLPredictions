@@ -50,4 +50,75 @@ module PagesHelper
 		end
 		return false
 	end
+
+	def picks_result (username)
+		schedule = load_schedule
+		picks = load_user_picks(username)
+		result = Array.new
+		result.push([])
+		for week in 1..17
+			aux = Hash.new
+			result.push(aux)
+			for game in schedule[week.to_s]
+				if picks.key?(game["gameId"]) and game["winner"] != ""
+					if picks[game["gameId"]] == game["winner"]
+						result[week].store(game["gameId"], true)
+					else
+						result[week].store(game["gameId"], false)
+					end
+				end
+			end
+		end
+		result[1].store(1, true)
+		result[1].store(2, false)
+		return result
+	end
+
+	def count_result (username, result)
+		week_score = Array.new
+		week_score.push([])
+		ok = 0
+		wrong = 0
+		for week in 1..17
+			ok_week = 0
+			wrong_week = 0
+			result[week].each do |id, res|
+				if res == true
+					ok_week += 1
+				else
+					wrong_week += 1
+				end
+			end
+			week_score.push([ok_week, wrong_week])
+			ok += ok_week
+			wrong += wrong_week
+		end
+		overall_score = [ok, wrong]
+		return week_score, overall_score
+	end
+
+	def left_to_close(gameDay, gameTimeET)
+		date = gameDay.split("-")
+		day = Time.utc(date[0].to_i,date[1].to_i,date[2].to_i)
+		timeest = Time.now.in_time_zone
+		timeutc = Time.now.in_time_zone.utc
+		time_difference_in_seconds = timeutc.utc_offset - timeest.utc_offset
+		gameTime = day.to_i + time_difference_in_seconds
+		tme = gameTimeET.split(" ")
+		hm = tme[0].split(":")
+		add = hm[0].to_i*3600 + hm[1].to_i*60
+		if tme[1] == "PM"
+			add += 12*3600
+		end
+		gameTime = gameTime + add
+		timeNow = timeutc.to_i
+		return gameTime-timeNow
+	end
+
+	def can_pick (gameDay, gameTimeET)
+		if left_to_close(gameDay, gameTimeET) < 30*60
+			return false
+		end
+		return true
+	end
 end
