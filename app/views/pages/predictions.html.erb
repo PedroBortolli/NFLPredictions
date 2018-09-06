@@ -39,7 +39,7 @@
 				<% end %>
 				<br/>
 				<% left = left_to_close(game["gameDate"], game["gameTimeET"]) %>
-				<% if left < 24*60*60 and left > 30*60 %>
+				<% if left < 24*60*60 + 30*60-1 and left > 30*60 %>
 					<% left -= 30*60 %>
 					<i><b><font color="red"><%= Time.at(left).utc.strftime("%H:%M:%S") %> left to pick</font></b></i>
 				<% end %>

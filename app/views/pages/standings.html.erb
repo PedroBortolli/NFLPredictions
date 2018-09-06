@@ -58,8 +58,7 @@
 			<br/>
 			<br/>
 			<br/>
-			<br/>
-			<h2>Standings based on <%= @username %>'s predictions</h2>
+			<h3>Standings based on <%= @username %>'s picks</h3>
 			<br/>
 			<br/>
 			<h3>Playoff teams</h3>
@@ -71,7 +70,7 @@
 		</div>
 
 		<div class="right">
-			<div style="float: right;margin-right: 35px;">
+			<div style="float: right;margin-right: 34px;">
 			NFC East
 			</div>
 			<br/>
@@ -81,7 +80,7 @@
 				<div style="width: 50px; float: left; display:inline;">
 				<%= team %>
 				</div>
-				<div style="width: 30px; float: left; display:inline;">
+				<div style="width: 50px; float: left; display:inline;">
 				<%= @wins[team] %>-<%= @total[team]-@wins[team] %>
 				</div>
 				<br/>
