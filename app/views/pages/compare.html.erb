@@ -8,6 +8,7 @@
 	</br>
 	<% week = params[:week] %>
 	<h2>Week <%= week %></h2>
+	<h3><i>(<font color="red"><%= @week_score1[week.to_i][0]%>-<%= @week_score1[week.to_i][1]%></font>)</i> <%= @username1 %> x <%= @username2 %> <i>(<font color="red"><%= @week_score2[week.to_i][0]%>-<%= @week_score2[week.to_i][1]%></font>)</i></h3>
 	</br>
 	</br>
 	<div class = "grid">
