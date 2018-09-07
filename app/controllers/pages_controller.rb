@@ -45,7 +45,7 @@ class PagesController < ApplicationController
 		for data in database
 			if !(seen.key?(data.user))
 				seen.store(data.user, true)
-				result = picks_result(@username)
+				result = picks_result(data.user)
 				week_score, overall_score = count_result(data.user, result)
 				@rank.push([overall_score[0], overall_score[1], data.user])
 			end

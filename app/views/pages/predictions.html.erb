@@ -15,11 +15,9 @@
 		<% for game in @schedule[week.to_s] %>
 			<% color = "" %>
 			<% if !can_pick(game["gameDate"], game["gameTimeET"]) %>
-				<% puts("Pintando de cinza") %>
 				<% color = "grey" %>
 			<% end %>
 			<% if @result[week.to_i].key?((game["gameId"]).to_s) %>
-				<% puts("Eae men") %>
 				<% if @result[week.to_i][(game["gameId"]).to_s] == true %>
 					<% color = "#53BD62" %>
 				<% else %>
