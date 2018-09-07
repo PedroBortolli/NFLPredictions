@@ -131,11 +131,11 @@ class PagesController < ApplicationController
 				end
 			end
 		end
-		@afc_east = [['NE', @wins['NE']], ['NYJ', @wins['NYJ']], ['BUF', @wins['BUF']], ['MIA', @wins['BUF']]]
+		@afc_east = [['NE', @wins['NE']], ['NYJ', @wins['NYJ']], ['BUF', @wins['BUF']], ['MIA', @wins['MIA']]]
 		@afc_east = @afc_east.sort { |a, b| b[1] <=> a[1] }
 		@afc_north = [['PIT', @wins['PIT']], ['CIN', @wins['CIN']], ['BAL', @wins['BAL']], ['CLE', @wins['CLE']]]
 		@afc_north = @afc_north.sort { |a, b| b[1] <=> a[1] }
-		@afc_west = [['DEN', @wins['DEN']], ['LAC', @wins['LAC']], ['OAK', @wins['OAK']], ['KC', @wins['OAK']]]
+		@afc_west = [['DEN', @wins['DEN']], ['LAC', @wins['LAC']], ['OAK', @wins['OAK']], ['KC', @wins['KC']]]
 		@afc_west = @afc_west.sort { |a, b| b[1] <=> a[1] }
 		@afc_south = [['IND', @wins['IND']], ['HOU', @wins['HOU']], ['JAC', @wins['JAC']], ['TEN', @wins['TEN']]]
 		@afc_south = @afc_south.sort { |a, b| b[1] <=> a[1] }
