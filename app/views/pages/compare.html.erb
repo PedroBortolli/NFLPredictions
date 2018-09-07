@@ -17,8 +17,8 @@
 			<% if !can_pick(game["gameDate"], game["gameTimeET"]) %>
 				<% color1 = "grey" %>
 			<% end %>
-			<% if @result1[week.to_i].key?((game["gameId"]).to_i) %>
-				<% if @result1[week.to_i][(game["gameId"]).to_i] == true %>
+			<% if @result1[week.to_i].key?((game["gameId"]).to_s) %>
+				<% if @result1[week.to_i][(game["gameId"]).to_s] == true %>
 					<% color1 = "#53BD62" %>
 				<% else %>
 					<% color1 = "#C45057" %>
@@ -28,8 +28,8 @@
 			<% if !can_pick(game["gameDate"], game["gameTimeET"]) %>
 				<% color2 = "grey" %>
 			<% end %>
-			<% if @result2[week.to_i].key?((game["gameId"]).to_i) %>
-				<% if @result2[week.to_i][(game["gameId"]).to_i] == true %>
+			<% if @result2[week.to_i].key?((game["gameId"]).to_s) %>
+				<% if @result2[week.to_i][(game["gameId"]).to_s] == true %>
 					<% color2 = "#53BD62" %>
 				<% else %>
 					<% color2 = "#C45057" %>

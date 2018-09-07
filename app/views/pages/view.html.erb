@@ -17,8 +17,8 @@
 			<% if !can_pick(game["gameDate"], game["gameTimeET"]) %>
 				<% color = "grey" %>
 			<% end %>
-			<% if @result[week.to_i].key?((game["gameId"]).to_i) %>
-				<% if @result[week.to_i][(game["gameId"]).to_i] == true %>
+			<% if @result[week.to_i].key?((game["gameId"]).to_s) %>
+				<% if @result[week.to_i][(game["gameId"]).to_s] == true %>
 					<% color = "#53BD62" %>
 				<% else %>
 					<% color = "#C45057" %>
