@@ -35,6 +35,10 @@
 					<% color2 = "#C45057" %>
 				<% end %>
 			<% end %>
+			<% if game["winner"] == "TIE" %>
+				<% color1 = "yellow" %>
+				<% color2 = "yellow" %>
+			<% end %>
 			<div class = "box centered">
 				<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", size: "40x27", class: "img-responsive") %> 
 				<%= image_tag("@.png", size: "25x25", class: "img-responsive") %>

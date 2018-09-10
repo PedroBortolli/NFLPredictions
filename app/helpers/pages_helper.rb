@@ -60,7 +60,7 @@ module PagesHelper
 			aux = Hash.new
 			result.push(aux)
 			for game in schedule[week.to_s]
-				if picks.key?(game["gameId"]) and game["winner"] != ""
+				if picks.key?(game["gameId"]) and game["winner"] != "" and game["winner"] != "TIE"
 					if picks[game["gameId"]] == game["winner"]
 						result[week].store(game["gameId"], true)
 					else

@@ -24,6 +24,9 @@
 					<% color = "#C45057" %>
 				<% end %>
 			<% end %>
+			<% if game["winner"] == "TIE" %>
+				<% color = "yellow" %>
+			<% end %>
 			<div class = "box centered" style="background-color: <%= color %>;">
 				<%= image_tag("logos/#{game["awayTeam"]}.png", alt: "#{game["awayTeam"]} logo", id: "#{game["awayTeam"]}", onclick: "click_on_image(id, '#{game["homeTeam"]}', '#{game["gameId"]}', '#{game["gameDate"]}', '#{game["gameTimeET"]}')", onmouseover: "", style: "cursor: pointer", size: "120x70", class: "img-responsive") %> 
 				<!--&nbsp;&nbsp;&nbsp;&nbsp;-->
