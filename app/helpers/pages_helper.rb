@@ -19,6 +19,7 @@ module PagesHelper
 	end
 
 	def load_schedule
+		headers['Last-Modified'] = Time.now.httpdate
 		url = "https://www.fantasyfootballnerd.com/service/schedule/json/56rzxuc2a53b/"
 		schedule = call_api(url)["Schedule"]
 		parsed_schedule = Hash.new{|h,k| h[k] = Array.new}
@@ -29,6 +30,7 @@ module PagesHelper
 	end
 
 	def load_user_picks (username)
+		headers['Last-Modified'] = Time.now.httpdate
 		url = "https://www.fantasyfootballnerd.com/service/weather/json/56rzxuc2a53b/"
 		games_info = call_api(url)
 		games_picked = Hash.new
