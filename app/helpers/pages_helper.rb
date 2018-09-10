@@ -1,6 +1,9 @@
 #require 'rest-client'
 module PagesHelper
 	def call_api (url)
+		timestamp = Time.now.in_time_zone.to_i
+		url = url+"?timestamp"+timestamp.to_s
+		puts("Calling " + url.to_s)
 		response_from_api = RestClient.get(url)
 		parsed_json = JSON.parse(response_from_api)
 		return parsed_json
