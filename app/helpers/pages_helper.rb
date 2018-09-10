@@ -20,10 +20,14 @@ module PagesHelper
 
 	def load_schedule
 		headers['Last-Modified'] = Time.now.httpdate
+		puts("Loading schedule")
 		url = "https://www.fantasyfootballnerd.com/service/schedule/json/56rzxuc2a53b/"
 		schedule = call_api(url)["Schedule"]
 		parsed_schedule = Hash.new{|h,k| h[k] = Array.new}
 		for game in schedule
+			if game["gameId"] == "14"
+				puts("Recebi o winner como " + game["winner"])
+			end
 			parsed_schedule[game["gameWeek"]].push(game)
 		end
 		return parsed_schedule
