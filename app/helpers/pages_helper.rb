@@ -2,8 +2,7 @@
 module PagesHelper
 	def call_api (url)
 		timestamp = Time.now.in_time_zone.to_i
-		url = url+"?timestamp"+timestamp.to_s
-		puts("Calling " + url.to_s)
+		url = url+"?timestamp="+timestamp.to_s
 		response_from_api = RestClient.get(url)
 		parsed_json = JSON.parse(response_from_api)
 		return parsed_json
@@ -22,22 +21,16 @@ module PagesHelper
 	end
 
 	def load_schedule
-		headers['Last-Modified'] = Time.now.httpdate
-		puts("Loading schedule")
 		url = "https://www.fantasyfootballnerd.com/service/schedule/json/56rzxuc2a53b/"
 		schedule = call_api(url)["Schedule"]
 		parsed_schedule = Hash.new{|h,k| h[k] = Array.new}
 		for game in schedule
-			if game["gameId"] == "14"
-				puts("Recebi o winner como " + game["winner"])
-			end
 			parsed_schedule[game["gameWeek"]].push(game)
 		end
 		return parsed_schedule
 	end
 
 	def load_user_picks (username)
-		headers['Last-Modified'] = Time.now.httpdate
 		url = "https://www.fantasyfootballnerd.com/service/weather/json/56rzxuc2a53b/"
 		games_info = call_api(url)
 		games_picked = Hash.new
@@ -69,9 +62,6 @@ module PagesHelper
 			aux = Hash.new
 			result.push(aux)
 			for game in schedule[week.to_s]
-				if game["gameId"].to_i <= 14
-					puts("Winner => " + game["winner"].to_s)
-				end
 				if picks.key?(game["gameId"]) and game["winner"] != "" and game["winner"] != "TIE"
 					if picks[game["gameId"]] == game["winner"]
 						result[week].store(game["gameId"], true)

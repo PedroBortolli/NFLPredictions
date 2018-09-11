@@ -88,7 +88,6 @@ class PagesController < ApplicationController
 		winner = params[:gameWinner].to_s
 		gameId = params[:gameId].to_s
 		prediction = search_for_game(current_user.username, gameId)
-		puts(prediction)
 		if prediction == nil
 			prediction = Prediction.new
 			prediction.user = current_user.username
